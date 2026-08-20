@@ -6,6 +6,7 @@ The home screen shows the user location, search bar, and bottom navigation menu.
 <img width="137" height="238" alt="shopscreen" src="https://github.com/user-attachments/assets/e45ee73d-f031-4360-89c7-6cd3f509eeb3" />
 
 🔐 Login Screen Users can log in using their email and password.
+
 <img width="252" height="419" alt="login screen" src="https://github.com/user-attachments/assets/15665164-c1bc-489e-9dee-659e7aa425c5" />
 
 login screen
