@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
 import 'package:grocery_app/screens/login_screen.dart';
 import 'package:grocery_app/screens/signup_screen.dart';
 
@@ -10,7 +11,8 @@ class GroceryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
       return MaterialApp(
-        home:SignupScreen(),
+        debugShowCheckedModeBanner: false,
+        home:BottonNavBarScreen(),
       );
    }
 }
