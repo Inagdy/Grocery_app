@@ -24,6 +24,12 @@ this page has Slide bar with all offers and products and also with all products 
 
 <img width="161" height="351" alt="navbar" src="https://github.com/user-attachments/assets/80240067-4ff7-4e2f-bd50-a46f45edd98a" />
 
+Adding List view to Shop screen 
+and make data change as per list of products in model 
+
+<img width="163" height="354" alt="listview" src="https://github.com/user-attachments/assets/54d24371-aefa-4bae-96ca-ef32725b6b03" />
+
+
 
 ✨ Features 🥕 Clean grocery app UI 📍 Location display 🔎 Store search functionality 🔐 Login screen 📝 Sign up screen 👁 Password visibility icon 🛒 Cart navigation ❤️ Favorite section 👤 Account section 📱 Mobile-friendly layout 🎨 Simple and modern design
 
