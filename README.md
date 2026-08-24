@@ -22,7 +22,8 @@ New users can create an account by entering username, email, and password.
 Slide bar at home screen
 this page has Slide bar with all offers and products and also with all products and best sales 
 
-<img width="160" height="349" alt="navbar" src="https://github.com/user-attachments/assets/a393f844-2f02-4f8a-ad51-eb62b3c5a2fe" />
+<img width="161" height="351" alt="navbar" src="https://github.com/user-attachments/assets/80240067-4ff7-4e2f-bd50-a46f45edd98a" />
+
 
 ✨ Features 🥕 Clean grocery app UI 📍 Location display 🔎 Store search functionality 🔐 Login screen 📝 Sign up screen 👁 Password visibility icon 🛒 Cart navigation ❤️ Favorite section 👤 Account section 📱 Mobile-friendly layout 🎨 Simple and modern design
 
