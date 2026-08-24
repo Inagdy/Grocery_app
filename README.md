@@ -1,4 +1,3 @@
-
 🥕 Grocery / Food Delivery App A modern grocery shopping mobile application with a clean UI, authentication screens, search functionality, location display, and bottom navigation. This project is designed to provide users with an easy and smooth shopping experience.
 
 📱 App Screenshots 
@@ -23,7 +22,7 @@ New users can create an account by entering username, email, and password.
 Slide bar at home screen
 this page has Slide bar with all offers and products and also with all products and best sales 
 
-
+<img width="160" height="349" alt="navbar" src="https://github.com/user-attachments/assets/a393f844-2f02-4f8a-ad51-eb62b3c5a2fe" />
 
 ✨ Features 🥕 Clean grocery app UI 📍 Location display 🔎 Store search functionality 🔐 Login screen 📝 Sign up screen 👁 Password visibility icon 🛒 Cart navigation ❤️ Favorite section 👤 Account section 📱 Mobile-friendly layout 🎨 Simple and modern design
 
