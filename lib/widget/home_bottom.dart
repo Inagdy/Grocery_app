@@ -14,12 +14,14 @@ class HomeBottom extends StatelessWidget {
     required this.price,
   });
 
+  
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 173.32,
       height: 248.51,
       padding: EdgeInsets.only(top: 25.21, left: 15, right: 14),
+      // margin: EdgeInsets.only(right: 15.07),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(18)),
         border: Border.all(color: Color(0xffE2E2E2), width: 1),
@@ -73,4 +75,8 @@ class HomeBottom extends StatelessWidget {
       ),
     );
   }
+}
+
+class Product{
+
 }

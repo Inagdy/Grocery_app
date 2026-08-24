@@ -25,7 +25,7 @@ class ShopScreen extends StatelessWidget {
             SizedBox(height: 7.6),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-        
+
               children: [
                 Icon(Icons.location_on, color: Color(0xff4C4F4D)),
                 Text(
@@ -45,38 +45,77 @@ class ShopScreen extends StatelessWidget {
             SizedBox(height: 30),
             HomeSectionTitle(leftWord: 'Exclusive Offer'),
             SizedBox(height: 20),
-        
-            Row(
-              children: [
-                
-                HomeBottom(
-                  imagePath: "assests/images/banana.png",
-                  mainTitle: "Organic Bananas",
-                  secandTitle: "7pcs, Priceg",
-                  price: "\$4.99",
-                ),
-                SizedBox(width: 15.07),
-                HomeBottom(
-                  imagePath: "assests/images/apple.png",
-                  mainTitle: "Red Apple",
-                  secandTitle: "1kg, Priceg",
-                  price: "\$4.99",
-                ),
-              ],
+
+            SizedBox(
+              height: 248.51,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: products.length,
+                separatorBuilder: (context, index) =>
+                    const SizedBox(width: 15.07),
+                itemBuilder: (context, index) {
+                  final product = products[index];
+                  return HomeBottom(
+                    imagePath: product["imagePath"]!,
+                    mainTitle: product["mainTitle"]!,
+                    secandTitle: product["secondTitle"]!,
+                    price: product["price"]!,
+                  );
+                },
+              ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 30),
             HomeSectionTitle(leftWord: "Best Selling"),
-            SizedBox(height: 20.28,),
-            Row(
-              children: [
-                HomeBottom(imagePath: "assests/images/redChili.png", mainTitle: "Bell Pepper Red", secandTitle: "1kg, Priceg", price:"\$4.99" ),
-                SizedBox(width: 15.07),
-                HomeBottom(imagePath: "assests/images/ginger.png", mainTitle: "Ginger", secandTitle: "250gm, Priceg", price: "\$4.99"),
-              ],
-            )
+            SizedBox(height: 20.28),
+                        SizedBox(
+              height: 248.51,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: products.length,
+                separatorBuilder: (context, index) =>
+                    const SizedBox(width: 15.07),
+                itemBuilder: (context, index) {
+                  final product = products[index];
+
+                  return HomeBottom(
+                    imagePath: product["imagePath"]!,
+                    mainTitle: product["mainTitle"]!,
+                    secandTitle: product["secondTitle"]!,
+                    price: product["price"]!,
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+final List<Map<String, String>> products = [
+  {
+    "imagePath": "assests/images/banana.png",
+    "mainTitle": "Organic Bananas",
+    "secondTitle": "7pcs, Priceg",
+    "price": "\$4.99",
+  },
+  {
+    "imagePath": "assests/images/apple.png",
+    "mainTitle": "Red Apple",
+    "secondTitle": "1kg, Priceg",
+    "price": "\$4.99",
+  },
+  {
+    "imagePath": "assests/images/ginger.png",
+    "mainTitle": "Ginger",
+    "secondTitle": "1kg, Priceg",
+    "price": "\$4.99",
+  },
+    {
+    "imagePath": "assests/images/redChili.png",
+    "mainTitle": "Bell Pepper Red",
+    "secondTitle": "1kg, Priceg",
+    "price": "\$4.99",
+  },
+];
