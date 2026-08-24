@@ -16,6 +16,11 @@ signup screen
 
 <img width="256" height="428" alt="signup screen" src="https://github.com/user-attachments/assets/d951690c-44de-4ed5-bc20-a36daca9d129" />
 
+Slide bar at home screen
+this page has Slide bar with all offers and products and also with all products and best sales 
+
+
+
 ✨ Features 🥕 Clean grocery app UI 📍 Location display 🔎 Store search functionality 🔐 Login screen 📝 Sign up screen 👁 Password visibility icon 🛒 Cart navigation ❤️ Favorite section 👤 Account section 📱 Mobile-friendly layout 🎨 Simple and modern design
 
 project-name/ │ ├── assets/ │ ├── images/ │ └── icons/ │ ├── screenshots/ │ ├── home.png │ ├── login.png │ └── signup.png │ ├── src/ │ ├── screens/ │ │ ├── HomeScreen │ │ ├── LoginScreen │ │ └── SignUpScreen │ │ │ ├── components/ │ ├── navigation/ │ └── services/ │ ├── README.md └── package.json

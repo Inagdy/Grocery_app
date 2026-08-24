@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/widget/button.dart';
+import 'package:grocery_app/widget/header.dart';
 import 'package:grocery_app/widget/text_field.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -15,34 +16,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 28.42),
-              Center(
-                child: Image.asset(
-                  "assests/images/carrot.png",
-                  width: 47.84,
-                  height: 55.64,
-                ),
-              ),
-              SizedBox(height: 100.21),
-              Text(
-                "Login",
-                style: TextStyle(
-                  fontWeight: FontWeight(600),
-                  fontSize: 26,
-                  letterSpacing: 0,
-                  color: Color(0xff181725),
-                ),
-              ),
-              SizedBox(height: 15),
-              Text(
-                "Enter your emails and password",
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight(400),
-                  color: Color(0xff7C7C7C),
-                  letterSpacing: 0,
-                ),
-              ),
+              Header(headerMainText:"Login", secandMainText: "Enter your emails and password"),
               SizedBox(height: 40),
               CustomTextField(label: "Email"),
               SizedBox(height: 30),

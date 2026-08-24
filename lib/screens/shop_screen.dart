@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/widget/home_bottom.dart';
+import 'package:grocery_app/widget/home_section_title.dart';
+import 'package:grocery_app/widget/home_slider.dart';
+import 'package:grocery_app/widget/text_field.dart';
 
 class ShopScreen extends StatelessWidget {
   const ShopScreen({super.key});
@@ -34,42 +38,41 @@ class ShopScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          TextFormField(
-            onTapUpOutside: (v)
-            {
-              FocusScope.of(context).unfocus();
-            },
-            cursorColor: Color(0xff53B175),
-            decoration: InputDecoration(
-              fillColor: Color(0xffF2F3F2),
-              filled: true,
-              hintText: "Search Store",
-              hintStyle: TextStyle(
-                fontWeight: FontWeight(600),
-                color: Color(0xff7C7C7C)
-                ),
-              prefixIcon: Padding(
-                padding: const EdgeInsets.only(left:15,right: 9.81 ),
-                child: Icon(
-                  Icons.search_rounded,
-                  size: 18.21,
-                  color: Color(0xff181B19),
-                ),
+          CustomTextField(searchFeild: true),
+          SizedBox(height: 20),
+          HomeSlider(),
+          SizedBox(height: 30),
+          HomeSectionTitle(leftWord: 'Exclusive Offer'),
+          SizedBox(height: 20),
+
+          Row(
+            children: [
+              
+              HomeBottom(
+                imagePath: "assests/images/banana.png",
+                mainTitle: "Organic Bananas",
+                secandTitle: "7pcs, Priceg",
+                price: "\$4.99",
               ),
-              prefixIconConstraints: const BoxConstraints(
-                maxWidth: 43,
-                minHeight: 40,
+              SizedBox(width: 15.07),
+              HomeBottom(
+                imagePath: "assests/images/apple.png",
+                mainTitle: "Red Apple",
+                secandTitle: "1kg, Priceg",
+                price: "\$4.99",
               ),
-              enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide.none,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide.none,
-                borderRadius: BorderRadius.circular(15),
-              ),
-            ),
+            ],
           ),
+          SizedBox(height: 30,),
+          HomeSectionTitle(leftWord: "Best Selling"),
+          SizedBox(height: 20.28,),
+          Row(
+            children: [
+              HomeBottom(imagePath: "assests/images/redChili.png", mainTitle: "Bell Pepper Red", secandTitle: "1kg, Priceg", price:"\$4.99" ),
+              SizedBox(width: 15.07),
+              HomeBottom(imagePath: "assests/images/ginger.png", mainTitle: "Ginger", secandTitle: "250gm, Priceg", price: "\$4.99"),
+            ],
+          )
         ],
       ),
     );
