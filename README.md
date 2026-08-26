@@ -1,12 +1,6 @@
 🥕 Grocery / Food Delivery App A modern grocery shopping mobile application with a clean UI, authentication screens, search functionality, location display, and bottom navigation. This project is designed to provide users with an easy and smooth shopping experience.
 
 📱 App Screenshots 
-🏠 Home / Shop Screen 
-The home screen shows the user location, search bar, and bottom navigation menu.
-
-<img width="268" height="482" alt="shopscreen" src="https://github.com/user-attachments/assets/5ede6208-a3ce-4d4e-9e79-1462bc164dd1" />
-
-
 🔐 Login Screen 
 Users can log in using their email and password.
 
@@ -18,9 +12,9 @@ New users can create an account by entering username, email, and password.
 
 <img width="256" height="428" alt="signup screen" src="https://github.com/user-attachments/assets/c0ae5177-4d53-4fff-b009-3edcda35ba5b" />
 
-
-Adding List view to Shop screen 
-and make data change as per list of products in model slider bar 
+🏠 Home / Shop Screen 
+The home screen shows the user location, search bar, and bottom navigation menu slider bar 
+make slider for the product  and make data change as per list of products in model 
 
 <img width="163" height="354" alt="listview" src="https://github.com/user-attachments/assets/54d24371-aefa-4bae-96ca-ef32725b6b03" />
 
