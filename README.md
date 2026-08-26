@@ -19,13 +19,8 @@ New users can create an account by entering username, email, and password.
 <img width="256" height="428" alt="signup screen" src="https://github.com/user-attachments/assets/c0ae5177-4d53-4fff-b009-3edcda35ba5b" />
 
 
-Slide bar at home screen
-this page has Slide bar with all offers and products and also with all products and best sales 
-
-<img width="161" height="351" alt="navbar" src="https://github.com/user-attachments/assets/80240067-4ff7-4e2f-bd50-a46f45edd98a" />
-
 Adding List view to Shop screen 
-and make data change as per list of products in model 
+and make data change as per list of products in model slider bar 
 
 <img width="163" height="354" alt="listview" src="https://github.com/user-attachments/assets/54d24371-aefa-4bae-96ca-ef32725b6b03" />
 
