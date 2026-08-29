@@ -16,7 +16,7 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:const ProductDetails(),
+        home:const ShopScreen(),
       );
    }
 }
