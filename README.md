@@ -1,25 +1,104 @@
-🥕 Grocery / Food Delivery App A modern grocery shopping mobile application with a clean UI, authentication screens, search functionality, location display, and bottom navigation. This project is designed to provide users with an easy and smooth shopping experience.
+# 🥕 Grocery Shopping App
 
-📱 App Screenshots 
-🔐 Login Screen 
-Users can log in using their email and password.
+A clean and modern grocery shopping mobile application built with **Flutter**.  
+This app allows users to browse grocery products, view product details, manage account information, and use authentication screens such as login and signup.
 
-<img width="252" height="419" alt="login screen" src="https://github.com/user-attachments/assets/d63e2a3a-7387-45f0-9f40-b7d86638beb5" />
+## 📱 App Screenshots
 
+### Home Screen
+<img src="screenshots/home.png" width="250"/>
 
-📝 Sign Up Screen 
-New users can create an account by entering username, email, and password.
+### Product Details Screen
+<img src="screenshots/product_detail.png" width="250"/>
 
-<img width="256" height="428" alt="signup screen" src="https://github.com/user-attachments/assets/c0ae5177-4d53-4fff-b009-3edcda35ba5b" />
+### Login Screen
+<img src="screenshots/login.png" width="250"/>
 
-🏠 Home / Shop Screen 
-The home screen shows the user location, search bar, and bottom navigation menu slider bar 
-make slider for the product  and make data change as per list of products in model 
+### Sign Up Screen
+<img src="screenshots/signup.png" width="250"/>
 
-<img width="163" height="354" alt="listview" src="https://github.com/user-attachments/assets/54d24371-aefa-4bae-96ca-ef32725b6b03" />
+### Account Screen
+<img src="screenshots/account.png" width="250"/>
 
+---
 
+## ✨ Features
 
-✨ Features 🥕 Clean grocery app UI 📍 Location display 🔎 Store search functionality 🔐 Login screen 📝 Sign up screen 👁 Password visibility icon 🛒 Cart navigation ❤️ Favorite section 👤 Account section 📱 Mobile-friendly layout 🎨 Simple and modern design
+- 🛒 Grocery product listing
+- 🍎 Product details page
+- 🔍 Explore/search navigation
+- ❤️ Favourite section
+- 🛍️ Cart screen
+- 👤 Account/profile screen
+- 🔐 Login screen
+- 📝 Sign up screen
+- 📦 Order section
+- 📍 Delivery address section
+- 💳 Payment methods option
+- 🎁 Promo card option
+- 🔔 Notifications option
+- ❓ Help section
+- 🚪 Logout button
+- 📱 Clean mobile UI
+- 🎨 Modern green grocery theme
 
-project-name/ │ ├── assets/ │ ├── images/ │ └── icons/ │ ├── screenshots/ │ ├── home.png │ ├── login.png │ └── signup.png │ ├── src/ │ ├── screens/ │ │ ├── HomeScreen │ │ ├── LoginScreen │ │ └── SignUpScreen │ │ │ ├── components/ │ ├── navigation/ │ └── services/ │ ├── README.md └── package.json
+---
+
+## 🖼️ UI Preview
+
+The application includes a simple grocery shopping interface with:
+
+- Product cards
+- Category sections
+- Banner slider
+- Bottom navigation bar
+- Authentication forms
+- Account menu options
+- Product image carousel
+- Quantity selector
+- Review and nutrition sections
+
+---
+
+## 🛠️ Built With
+
+- **Flutter**
+- **Dart**
+- **Material Design**
+- **Custom Widgets**
+- **Bottom Navigation Bar**
+- **TextFormField**
+- **ListView / Column / Row Layouts**
+
+---
+
+## 📂 Project Structure
+
+```text
+lib/
+│
+├── main.dart
+├── screens/
+│   ├── home_screen.dart
+│   ├── login_screen.dart
+│   ├── signup_screen.dart
+│   ├── product_details_screen.dart
+│   ├── account_screen.dart
+│   ├── cart_screen.dart
+│   ├── favourite_screen.dart
+│   └── explore_screen.dart
+│
+├── widgets/
+│   ├── product_card.dart
+│   ├── custom_button.dart
+│   ├── custom_text_field.dart
+│   ├── bottom_nav_bar.dart
+│   └── banner_slider.dart
+│
+├── models/
+│   └── product_model.dart
+│
+└── utils/
+    ├── app_colors.dart
+    ├── app_images.dart
+    └── app_styles.dart
