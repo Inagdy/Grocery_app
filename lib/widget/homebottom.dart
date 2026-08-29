@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/models/product_model.dart';
 
 class HomeBottom extends StatelessWidget {
-  final String imagePath;
-  final String mainTitle;
-  final String secandTitle;
-  final String price;
+  final ProductModel productModel;
 
-  const HomeBottom({
-    super.key,
-    required this.imagePath,
-    required this.mainTitle,
-    required this.secandTitle,
-    required this.price,
-  });
+  const HomeBottom({super.key, required this.productModel });
+  static const mainBackgroundColor = Color(0xff53B175);
 
-  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,10 +21,16 @@ class HomeBottom extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Center(child: Image.asset(imagePath ,width: 103.43,height: 62.56,)),
+          Center(
+            child: Image.asset(
+              productModel.image,
+              width: 103.43,
+              height: 62.56,
+            ),
+          ),
           SizedBox(height: 25),
           Text(
-            mainTitle,
+            productModel.title,
             style: TextStyle(
               fontWeight: FontWeight(400),
               fontSize: 16,
@@ -41,7 +39,7 @@ class HomeBottom extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Text(
-            secandTitle,
+            productModel.descripion,
             style: TextStyle(
               fontWeight: FontWeight(400),
               color: Color(0xff7C7C7C),
@@ -53,7 +51,7 @@ class HomeBottom extends StatelessWidget {
 
             children: [
               Text(
-                price,
+                productModel.price.toString(),
                 style: TextStyle(
                   fontWeight: FontWeight(600),
                   fontSize: 16,
@@ -75,8 +73,4 @@ class HomeBottom extends StatelessWidget {
       ),
     );
   }
-}
-
-class Product{
-
 }

@@ -5,6 +5,8 @@ import 'package:grocery_app/widget/text_field.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
+  static const mainBackgroundColor = 0xff53B175;
+
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +61,7 @@ class SignupScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30.03),
-              CustomButton(text: "Sign Up"),
+              CustomButton(text: "Sign Up", background: mainBackgroundColor.toString(),hasIcon: false),
               SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

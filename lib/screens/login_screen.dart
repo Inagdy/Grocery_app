@@ -5,7 +5,7 @@ import 'package:grocery_app/widget/text_field.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
-
+  static const mainBackgroundColor = 0xff53B175;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,10 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Header(headerMainText:"Login", secandMainText: "Enter your emails and password"),
+              Header(
+                headerMainText: "Login",
+                secandMainText: "Enter your emails and password",
+              ),
               SizedBox(height: 40),
               CustomTextField(label: "Email"),
               SizedBox(height: 30),
@@ -35,7 +38,10 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-              CustomButton(text: "Login"),
+              CustomButton(
+                text: "Login",
+                background: mainBackgroundColor.toString(), hasIcon: false,
+              ),
               SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                     " Singup",
                     style: TextStyle(
                       fontWeight: FontWeight(600),
-                      color: Color(0xff53B175),
+                      color: Color(mainBackgroundColor),
                     ),
                   ),
                 ],

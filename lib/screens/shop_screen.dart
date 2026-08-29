@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/widget/home_bottom.dart';
+import 'package:grocery_app/models/groceries_model.dart';
+import 'package:grocery_app/models/product_model.dart';
+import 'package:grocery_app/widget/homebottom.dart';
 import 'package:grocery_app/widget/home_section_title.dart';
 import 'package:grocery_app/widget/home_slider.dart';
+import 'package:grocery_app/widget/secand_home_slider.dart';
 import 'package:grocery_app/widget/text_field.dart';
 
 class ShopScreen extends StatelessWidget {
@@ -54,20 +57,14 @@ class ShopScreen extends StatelessWidget {
                 separatorBuilder: (context, index) =>
                     const SizedBox(width: 15.07),
                 itemBuilder: (context, index) {
-                  final product = products[index];
-                  return HomeBottom(
-                    imagePath: product["imagePath"]!,
-                    mainTitle: product["mainTitle"]!,
-                    secandTitle: product["secondTitle"]!,
-                    price: product["price"]!,
-                  );
+                  return HomeBottom(productModel: products[index]);
                 },
               ),
             ),
             SizedBox(height: 30),
             HomeSectionTitle(leftWord: "Best Selling"),
             SizedBox(height: 20.28),
-                        SizedBox(
+            SizedBox(
               height: 248.51,
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
@@ -75,14 +72,40 @@ class ShopScreen extends StatelessWidget {
                 separatorBuilder: (context, index) =>
                     const SizedBox(width: 15.07),
                 itemBuilder: (context, index) {
-                  final product = products[index];
+                  return HomeBottom(productModel: products[index]);
+                },
+              ),
+            ),
+            SizedBox(height: 30),
+            HomeSectionTitle(leftWord: "Groceries"),
+            SizedBox(height: 20),
 
-                  return HomeBottom(
-                    imagePath: product["imagePath"]!,
-                    mainTitle: product["mainTitle"]!,
-                    secandTitle: product["secondTitle"]!,
-                    price: product["price"]!,
-                  );
+            Padding(
+              padding: const EdgeInsets.only(left: 24.71),
+              child: SizedBox(
+                height: 105,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: groceries.length,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(width: 14.95),
+                  itemBuilder: (context, index) {
+                    return SecandHomeSlider(groceriesModel: groceries[index]);
+                  },
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+
+            SizedBox(
+              height: 248.51,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: products.length,
+                separatorBuilder: (context, index) =>
+                    const SizedBox(width: 15.07),
+                itemBuilder: (context, index) {
+                  return HomeBottom(productModel: products[index]);
                 },
               ),
             ),
@@ -93,29 +116,42 @@ class ShopScreen extends StatelessWidget {
   }
 }
 
-final List<Map<String, String>> products = [
-  {
-    "imagePath": "assests/images/banana.png",
-    "mainTitle": "Organic Bananas",
-    "secondTitle": "7pcs, Priceg",
-    "price": "\$4.99",
-  },
-  {
-    "imagePath": "assests/images/apple.png",
-    "mainTitle": "Red Apple",
-    "secondTitle": "1kg, Priceg",
-    "price": "\$4.99",
-  },
-  {
-    "imagePath": "assests/images/ginger.png",
-    "mainTitle": "Ginger",
-    "secondTitle": "1kg, Priceg",
-    "price": "\$4.99",
-  },
-    {
-    "imagePath": "assests/images/redChili.png",
-    "mainTitle": "Bell Pepper Red",
-    "secondTitle": "1kg, Priceg",
-    "price": "\$4.99",
-  },
+List<ProductModel> products = [
+  ProductModel(
+    image: "assests/images/banana.png",
+    title: "Organic Bananas",
+    descripion: "7pcs, Priceg",
+    price: 4.99,
+  ),
+  ProductModel(
+    image: "assests/images/apple.png",
+    title: "Red Apple",
+    descripion: "1kg, Priceg",
+    price: 4.99,
+  ),
+  ProductModel(
+    image: "assests/images/ginger.png",
+    title: "Ginger",
+    descripion: "1kg, Priceg",
+    price: 4.99,
+  ),
+  ProductModel(
+    image: "assests/images/redChili.png",
+    title: "Bell Pepper Red",
+    descripion: "1kg, Priceg",
+    price: 4.99,
+  ),
+];
+
+List<GroceriesModel> groceries = [
+  GroceriesModel(
+    backGroundColor: 0xffF8A44C,
+    imageLink: 'assests/images/pens.png',
+    title: 'Pulses',
+  ),
+  GroceriesModel(
+    backGroundColor: 0xff53B175,
+    imageLink: 'assests/images/rise.png',
+    title: 'Rice',
+  ),
 ];
