@@ -42,6 +42,7 @@ class HomeBottom extends StatelessWidget {
             productModel.descripion,
             style: TextStyle(
               fontWeight: FontWeight(400),
+              fontSize: 14,
               color: Color(0xff7C7C7C),
             ),
           ),
