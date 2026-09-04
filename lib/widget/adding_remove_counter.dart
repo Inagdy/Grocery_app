@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 
-class AddingRemoveCounter extends StatelessWidget {
-  const AddingRemoveCounter({super.key});
+class AddingRemoveCounter extends StatefulWidget {
+  final int count;
+  const AddingRemoveCounter({super.key, this.count = 1});
+
+  @override
+  State<AddingRemoveCounter> createState() => _AddingRemoveCounterState();
+}
+
+class _AddingRemoveCounterState extends State<AddingRemoveCounter> {
+  late int count;
+
+  @override
+  void initState() {
+    super.initState();
+    count = widget.count;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +24,14 @@ class AddingRemoveCounter extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Icon(Icons.remove, weight: 17, color: Color(0xffB3B3B3)),
+          IconButton(onPressed: () {
+            if (count > 0) {
+              setState(() {
+                count--;
+              });
+            }
+          },
+          icon: Icon(Icons.remove, weight: 17, color: Color(0xffB3B3B3))),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20),
             child: Container(
@@ -22,7 +43,7 @@ class AddingRemoveCounter extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(17)),
               ),
               child: Text(
-                "1",
+                count.toString(),
                 style: TextStyle(
                   fontWeight: FontWeight(600),
                   fontSize: 16,
@@ -31,7 +52,12 @@ class AddingRemoveCounter extends StatelessWidget {
               ),
             ),
           ),
-          Icon(Icons.add, weight: 17, color: Color(0xff53B175)),
+          IconButton(onPressed: () {
+            setState(() {
+              count++;
+            });
+          },
+          icon: Icon(Icons.add, weight: 17, color: Color(0xff53B175))),
         ],
       ),
     );
