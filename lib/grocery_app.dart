@@ -8,6 +8,8 @@ import 'package:grocery_app/screens/product_details.dart';
 import 'package:grocery_app/screens/shop_screen.dart';
 import 'package:grocery_app/screens/signup_screen.dart';
 
+import 'screens/shop_screen.dart';
+
 
 class GroceryApp extends StatelessWidget {
   const GroceryApp({super.key});
@@ -16,7 +18,10 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:const ShopScreen(),
+        home: const ProductDetails(),
       );
    }
 }
+
+
+

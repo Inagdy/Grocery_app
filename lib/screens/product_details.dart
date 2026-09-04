@@ -6,7 +6,9 @@ import 'package:grocery_app/widget/product_row_details.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class ProductDetails extends StatefulWidget {
-  const ProductDetails({super.key});
+  final bool onDotClicked;
+
+  const ProductDetails({super.key, this.onDotClicked = true});
 
   @override
   State<ProductDetails> createState() => _ProductDetailsState();
@@ -20,6 +22,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     'assets/images/apple.png',
   ];
   int activeIndex = 0;
+  bool isFavorite = false;
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +106,19 @@ class _ProductDetailsState extends State<ProductDetails> {
                           ),
                         ),
                       ),
-                      Icon(Icons.favorite_border),
+
+                      IconButton(
+                        onPressed: () {
+                          setState(() {
+                            isFavorite = !isFavorite;
+                          });
+                        },
+                        icon: Icon(
+                          isFavorite
+                              ? Icons.favorite
+                              : Icons.favorite_border,
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(height: 10.5),
