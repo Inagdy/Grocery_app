@@ -130,9 +130,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                       color: Color(0xff7C7C7C),
                     ),
                   ),
+                  SizedBox(height: 20),
                   Row(
                     children: [
-                      AddingRemoveCounter(),
+                      Expanded(child: AddingRemoveCounter(borderRadios :true)),
                       const SizedBox(width: 16),
                       const Text(
                         '\$4.99',
