@@ -21,6 +21,10 @@ This app allows users to browse grocery products, view product details, manage a
 ### Account Screen
 <img width="828" height="1792" alt="account sren" src="https://github.com/user-attachments/assets/9990ab04-41a2-479c-8e86-d7ab08594a08" />
 
+### Cart Screen 
+
+<img width="1320" height="2868" alt="mycart" src="https://github.com/user-attachments/assets/3dffb774-dc25-4bd9-aa68-80707108384e" />
+
 ---
 
 ## ✨ Features
