@@ -4,6 +4,7 @@ class CustomButton extends StatelessWidget {
   final String text;
   final bool hasIcon;
   final IconData? iData;
+  final bool haslefttag;
 
   final String background;
   const CustomButton({
@@ -12,6 +13,7 @@ class CustomButton extends StatelessWidget {
     required this.background,
     this.hasIcon = false,
     this.iData,
+    this.haslefttag = false,
   });
 
 @override
@@ -52,6 +54,28 @@ Widget build(BuildContext context) {
                 ),
               ),
             ),
+            if (haslefttag)
+              Positioned(
+                right: 22.5,
+                child: Container(
+                  width: 43,
+                  height: 22,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF489E67),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: const Text(
+                    "\$12.96",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xffFCFCFC),
+                    ),
+                  ),
+                ),
+              ),
           ],
         ),
       ),

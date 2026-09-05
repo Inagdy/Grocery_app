@@ -31,6 +31,7 @@ class CartScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.89),
             child: CustomButton(
+              haslefttag:true,
               text: 'Go to Checkout',
               background: '0xff53B175',
               hasIcon: false,
