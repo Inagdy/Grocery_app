@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
+import 'package:grocery_app/screens/onbording.dart';
 
 
 
@@ -12,7 +12,7 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:const BottonNavBarScreen(),
+        home:const OnbordingScreen(),
       );
    }
 }

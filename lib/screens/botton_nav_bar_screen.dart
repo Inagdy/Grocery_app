@@ -10,7 +10,7 @@ class BottonNavBarScreen extends StatefulWidget {
 
   @override
   State<BottonNavBarScreen> createState() => _BottonNavBarScreenState();
-}
+  }
 
 class _BottonNavBarScreenState extends State<BottonNavBarScreen> {
   int currentIndex =2;

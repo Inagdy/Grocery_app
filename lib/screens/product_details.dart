@@ -31,7 +31,7 @@ class _ProductDetailsState extends State<ProductDetails> {
         child: Column(
           children: [
             SizedBox(
-              width: 413.6,
+              // width: 413.6,
               height: 371.44,
               child: Stack(
                 children: [
