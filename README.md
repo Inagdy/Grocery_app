@@ -29,6 +29,9 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1290" height="2796" alt="favscreen" src="https://github.com/user-attachments/assets/cdef36fb-207d-43f6-80db-88e5849bc146" />
 
+### splash screen 
+
+<img width="1320" height="2868" alt="splasher" src="https://github.com/user-attachments/assets/f4de166c-da8b-41ec-b775-7b87bb0030ed" />
 
 ---
 
