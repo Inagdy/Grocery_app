@@ -33,6 +33,10 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1320" height="2868" alt="splasher" src="https://github.com/user-attachments/assets/f4de166c-da8b-41ec-b775-7b87bb0030ed" />
 
+### onBording
+
+<img width="1320" height="2868" alt="onbording" src="https://github.com/user-attachments/assets/f2a16951-0653-4db6-b875-40bd7cf662d4" />
+
 ---
 
 ## ✨ Features
