@@ -25,6 +25,11 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1320" height="2868" alt="mycart" src="https://github.com/user-attachments/assets/3dffb774-dc25-4bd9-aa68-80707108384e" />
 
+### Favorite Screen 
+
+<img width="1290" height="2796" alt="favscreen" src="https://github.com/user-attachments/assets/cdef36fb-207d-43f6-80db-88e5849bc146" />
+
+
 ---
 
 ## ✨ Features
