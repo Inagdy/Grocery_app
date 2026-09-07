@@ -46,6 +46,25 @@ class SearchScreen extends StatelessWidget {
           ),
         ),
       ),
+     bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1,
+
+        
+        backgroundColor: Color(0xffFFFFFF),
+        selectedItemColor: Color(0xff53B175),
+        unselectedItemColor: Color(0xff181725),
+        selectedLabelStyle: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight(600),
+        ),
+        type:BottomNavigationBarType.fixed,
+        items: [
+        BottomNavigationBarItem(icon: Icon(Icons.storefront),label: "Shop"),
+        BottomNavigationBarItem(icon: Icon(Icons.manage_search),label: "Explore"),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout_outlined),label: "Card"),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite_border_outlined),label: "Favourite"),
+        BottomNavigationBarItem(icon: Icon(Icons.person_3_outlined),label: "Account"),
+      ]),
     );
   }
 }
