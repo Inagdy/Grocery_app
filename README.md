@@ -5,6 +5,10 @@ This app allows users to browse grocery products, view product details, manage a
 
 ## 📱 App Screenshots
 
+### onBording
+
+<img width="1320" height="2868" alt="onbording" src="https://github.com/user-attachments/assets/f2a16951-0653-4db6-b875-40bd7cf662d4" />
+
 ### Home Screen
 <img width="828" height="1792" alt="shop screen" src="https://github.com/user-attachments/assets/e6d409a8-74a4-4fc0-9192-1b985a0f17c4" />
 
@@ -32,10 +36,6 @@ This app allows users to browse grocery products, view product details, manage a
 ### splash screen 
 
 <img width="1320" height="2868" alt="splasher" src="https://github.com/user-attachments/assets/f4de166c-da8b-41ec-b775-7b87bb0030ed" />
-
-### onBording
-
-<img width="1320" height="2868" alt="onbording" src="https://github.com/user-attachments/assets/f2a16951-0653-4db6-b875-40bd7cf662d4" />
 
 ### Explore screen
 
