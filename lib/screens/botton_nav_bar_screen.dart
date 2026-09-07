@@ -24,6 +24,7 @@ class _BottonNavBarScreenState extends State<BottonNavBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor:Color(0xffFFFFFF),
       body:SafeArea(child: screens[currentIndex]),
       bottomNavigationBar: BottomNavigationBar(
@@ -34,6 +35,7 @@ class _BottonNavBarScreenState extends State<BottonNavBarScreen> {
      
           });
         },
+        
         backgroundColor: Color(0xffFFFFFF),
         selectedItemColor: Color(0xff53B175),
         unselectedItemColor: Color(0xff181725),
