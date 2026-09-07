@@ -38,7 +38,7 @@ class HomeBottom extends StatelessWidget {
               color: Color(0xff181725),
             ),
           ),
-          SizedBox(height: 5),
+          // SizedBox(height: 5),
           Text(
             productModel.descripion,
             style: TextStyle(

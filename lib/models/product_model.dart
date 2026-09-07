@@ -6,6 +6,7 @@ class ProductModel {
   double? imageW =103.43;
   double? imageh =62.56;
 
+
   ProductModel({
     required this.image,
     required this.title,
@@ -13,5 +14,6 @@ class ProductModel {
     required this.price,
     this.imageW,
     this.imageh,
+
   });
 }

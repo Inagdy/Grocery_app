@@ -75,7 +75,7 @@ Widget build(BuildContext context) {
 
 List<ProductModel> products =
 [
-  ProductModel(image: 'assests/images/cokea.png', title: 'Diet Coke', descripion: '355ml, Price', price: 1.99 ,imageW: 44.49 ,imageh: 89.36),
+  ProductModel(image: 'assests/images/cokea.png', title: 'Diet Coke', descripion: '355ml, Price', price: 1.99 ,imageW: 44.49 ,imageh: 89.36 ),
   ProductModel(image: 'assests/images/sprite.png', title: 'Sprite Can', descripion: '325ml, Price', price: 1.50,imageW: 44.49 ,imageh: 89.36),
   ProductModel(image: 'assests/images/applegrape.png', title: 'Apple & Grape Juice', descripion: '2L, Price', price: 15.99,imageW: 44.49 ,imageh: 89.36 ),
   ProductModel(image: 'assests/images/orage.png', title: 'Orenge Juice', descripion: '2L, Price', price: 15.99,imageW: 44.49 ,imageh: 89.36),
