@@ -22,13 +22,14 @@ class HomeBottom extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(
-            child: Image.asset(
-              productModel.image,
-              width: 103.43,
-              height: 62.56,
+            child: Expanded(
+              child: Image.asset(
+                productModel.image,
+                width: productModel.imageW,
+                height:productModel.imageh,
+              ),
             ),
           ),
-          SizedBox(height: 25),
           Text(
             productModel.title,
             style: TextStyle(
@@ -49,14 +50,15 @@ class HomeBottom extends StatelessWidget {
           SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
+    
             children: [
-              Text(
-                productModel.price.toString(),
-                style: TextStyle(
-                  fontWeight: FontWeight(600),
-                  fontSize: 16,
-                  color: Color(0xff181725),
+              Expanded(
+                child: Text('\$${productModel.price.toString()}',
+                  style: TextStyle(
+                    fontWeight: FontWeight(600),
+                    fontSize: 16,
+                    color: Color(0xff181725),
+                  ),
                 ),
               ),
               Container(
