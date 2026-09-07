@@ -37,6 +37,10 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1320" height="2868" alt="onbording" src="https://github.com/user-attachments/assets/f2a16951-0653-4db6-b875-40bd7cf662d4" />
 
+### Explore screen
+
+<img width="1320" height="2868" alt="ex" src="https://github.com/user-attachments/assets/5dd20389-94ae-489f-b8ae-84c530f457f2" />
+
 ---
 
 ## ✨ Features
