@@ -41,6 +41,12 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1320" height="2868" alt="ex" src="https://github.com/user-attachments/assets/5dd20389-94ae-489f-b8ae-84c530f457f2" />
 
+### Beverages screen
+
+<img width="1290" height="2796" alt="Beverages" src="https://github.com/user-attachments/assets/032f837b-1b85-4459-a03e-55360a2c2b7a" />
+
+
+
 ---
 
 ## ✨ Features
