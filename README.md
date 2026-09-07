@@ -45,6 +45,9 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1290" height="2796" alt="Beverages" src="https://github.com/user-attachments/assets/032f837b-1b85-4459-a03e-55360a2c2b7a" />
 
+### Search screen
+
+<img width="1320" height="2868" alt="searchscreen" src="https://github.com/user-attachments/assets/73d27167-debc-4fa7-839d-bbd4b2ab3374" />
 
 
 ---
