@@ -51,7 +51,7 @@ This app allows users to browse grocery products, view product details, manage a
 
 ### Filter Screen 
 
-<img width="1290" height="2796" alt="filterscreen" src="https://github.com/user-attachments/assets/35b9cd11-95ec-4145-9bdb-426c21c483eb" />
+<img width="1290" height="2796" alt="filterscreen" src="https://github.com/user-attachments/assets/32287b94-e280-4245-adfa-72fc1bf03051" />
 
 ---
 
