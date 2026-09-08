@@ -2,8 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/filter.dart';
-import 'package:grocery_app/screens/product_details.dart';
-import 'package:grocery_app/screens/search_screen.dart';
+
 
 
 

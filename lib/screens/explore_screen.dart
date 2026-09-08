@@ -3,7 +3,7 @@ import 'package:grocery_app/models/explore_model.dart';
 import 'package:grocery_app/screens/beverages_screen.dart';
 import 'package:grocery_app/widget/text_field.dart';
 
-import '../widget/explore_item .dart';
+import '../widget/explore_item.dart';
 
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});
