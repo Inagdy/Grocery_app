@@ -1,7 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:grocery_app/screens/cart_screen.dart';
 import 'package:grocery_app/screens/filter.dart';
+import 'package:grocery_app/screens/orderaccept.dart';
 
 
 
@@ -13,7 +15,7 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:const FilterScreen(),
+        home:const OrderAccept(),
       );
    }
 }

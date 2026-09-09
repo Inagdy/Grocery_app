@@ -8,36 +8,38 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          SizedBox(height: 6.99),
-          Center(
-            child: Text(
-              'My Cart',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
-                color: Color(0xff181725),
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 6.99),
+            Center(
+              child: Text(
+                'My Cart',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xff181725),
+                ),
               ),
             ),
-          ),
-          Divider(color: Colors.grey, thickness: 1),
-          CardProduct(cardModel: products[0]),
-          CardProduct(cardModel: products[1]),
-          CardProduct(cardModel: products[2]),
-          CardProduct(cardModel: products[3]),
-          Divider(color: Colors.grey, thickness: 1),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.89),
-            child: CustomButton(
-              haslefttag:true,
-              text: 'Go to Checkout',
-              background: '0xff53B175',
-              hasIcon: false,
+            Divider(color: Colors.grey, thickness: 1),
+            CardProduct(cardModel: products[0]),
+            CardProduct(cardModel: products[1]),
+            CardProduct(cardModel: products[2]),
+            CardProduct(cardModel: products[3]),
+            Divider(color: Colors.grey, thickness: 1),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.89),
+              child: CustomButton(
+                haslefttag:true,
+                text: 'Go to Checkout',
+                background: '0xff53B175',
+                hasIcon: false,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

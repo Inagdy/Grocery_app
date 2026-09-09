@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final String text;
+  final String text ;
   final bool hasIcon;
   final IconData? iData;
   final bool haslefttag;
@@ -9,14 +9,15 @@ class CustomButton extends StatelessWidget {
   final String background;
   final VoidCallback? onPressed;
 
+
   const CustomButton({
     super.key,
-    required this.text,
+    required this.text ,
     required this.background,
     this.hasIcon = false,
     this.iData,
     this.haslefttag = false,
-    this.onPressed,
+    this.onPressed, 
   });
 
   @override
@@ -58,6 +59,7 @@ class CustomButton extends StatelessWidget {
                         : const Color(0xffFFF9FF),
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
+
                   ),
                 ),
               ),
