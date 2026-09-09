@@ -53,6 +53,9 @@ This app allows users to browse grocery products, view product details, manage a
 
 <img width="1290" height="2796" alt="filterscreen" src="https://github.com/user-attachments/assets/32287b94-e280-4245-adfa-72fc1bf03051" />
 
+### Bottom sheet order info
+
+<img width="1320" height="2868" alt="buttomsheet" src="https://github.com/user-attachments/assets/d126cdde-def4-4266-8344-bc00895a61f7" />
 
 ### Order accepts screen 
 
