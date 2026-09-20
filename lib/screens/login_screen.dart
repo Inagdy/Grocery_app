@@ -1,5 +1,7 @@
 ﻿import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
+import 'package:grocery_app/screens/signup_screen.dart';
 import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/header.dart';
@@ -41,8 +43,15 @@ class LoginScreen extends StatelessWidget {
               ),
               30.vertical,
               CustomButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => BottonNavBarScreen()),
+                  );
+                },
                 text: "Login",
-                background: mainBackgroundColor.toString(), hasIcon: false,
+                background: mainBackgroundColor.toString(),
+                hasIcon: false,
               ),
               25.vertical,
               Row(
@@ -55,11 +64,20 @@ class LoginScreen extends StatelessWidget {
                       color: Color(0xff181725),
                     ),
                   ),
-                  Text(
-                    " Singup",
-                    style: TextStyle(
-                      fontWeight: FontWeight(600),
-                      color: Color(mainBackgroundColor),
+                  InkWell(
+                    onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => SignupScreen()),
+                  );
+                    },
+                    child: Text(
+                    
+                      " Singup",
+                      style: TextStyle(
+                        fontWeight: FontWeight(600),
+                        color: Color(mainBackgroundColor),
+                      ),
                     ),
                   ),
                 ],

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/screens/login_screen.dart';
 import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
 import 'package:grocery_app/widget/button.dart';
@@ -74,7 +75,7 @@ class OnbordingScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => BottonNavBarScreen(),
+                      builder: (context) => LoginScreen(),
                     ),
                   );
                 },

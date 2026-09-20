@@ -1,4 +1,5 @@
 ﻿import 'package:flutter/material.dart';
+import 'package:grocery_app/screens/login_screen.dart';
 import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/header.dart';
@@ -7,7 +8,6 @@ import 'package:grocery_app/widget/text_field.dart';
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
   static const mainBackgroundColor = 0xff53B175;
-
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,10 @@ class SignupScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-  
-              Header(headerMainText:"Sign Up", secandMainText: "Enter your credentials to continue"),
+              Header(
+                headerMainText: "Sign Up",
+                secandMainText: "Enter your credentials to continue",
+              ),
               40.vertical,
               CustomTextField(label: "Username"),
               30.vertical,
@@ -57,12 +59,21 @@ class SignupScreen extends StatelessWidget {
                         color: Color(0xff53B175),
                       ),
                     ),
-
                   ],
                 ),
               ),
               30.03.vertical,
-              CustomButton(text: "Sign Up", background: mainBackgroundColor.toString(),hasIcon: false),
+              CustomButton(
+                onPressed: () {
+                                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => LoginScreen()),
+                  );
+                },
+                text: "Sign Up",
+                background: mainBackgroundColor.toString(),
+                hasIcon: false,
+              ),
               25.vertical,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -74,11 +85,19 @@ class SignupScreen extends StatelessWidget {
                       color: Color(0xff181725),
                     ),
                   ),
-                  Text(
-                    " Singup",
-                    style: TextStyle(
-                      fontWeight: FontWeight(600),
-                      color: Color(0xff53B175),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => LoginScreen()),
+                      );
+                    },
+                    child: Text(
+                      " Login",
+                      style: TextStyle(
+                        fontWeight: FontWeight(600),
+                        color: Color(0xff53B175),
+                      ),
                     ),
                   ),
                 ],
