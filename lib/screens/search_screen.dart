@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/product_model.dart';
 import 'package:grocery_app/widget/homebottom.dart';
 import 'package:grocery_app/widget/text_field.dart';
@@ -14,7 +16,7 @@ class SearchScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 5,),
+              5.vertical,
               Row(
                 children: [
                   Expanded(
@@ -23,11 +25,11 @@ class SearchScreen extends StatelessWidget {
                       suffixIcon: Icons.cancel,
                     ),
                   ),
-                  const SizedBox(width: 19.38),
+                  19.38.horizontal,
                   const Icon(Icons.commit),
                 ],
               ),
-              SizedBox(height: 30,),
+              30.vertical,
                Expanded(
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -54,7 +56,7 @@ class SearchScreen extends StatelessWidget {
         selectedItemColor: Color(0xff53B175),
         unselectedItemColor: Color(0xff181725),
         selectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: 12.sp,
           fontWeight: FontWeight(600),
         ),
         type:BottomNavigationBarType.fixed,

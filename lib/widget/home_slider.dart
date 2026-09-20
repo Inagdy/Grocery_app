@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomeSlider extends StatefulWidget {
@@ -18,7 +19,7 @@ class _HomeSliderState extends State<HomeSlider> {
       children: [
         CarouselSlider(
           options: CarouselOptions(
-            height: 114.99,
+            height: 114.99.h,
             autoPlay: true,
             viewportFraction: 1,
             enableInfiniteScroll: true,
@@ -52,8 +53,8 @@ class _HomeSliderState extends State<HomeSlider> {
             effect: ExpandingDotsEffect(
               dotColor: Colors.grey,
               activeDotColor: Color(0xff53B175),
-              dotWidth: 5.03,
-              dotHeight: 5.38,
+              dotWidth: 5.03.w,
+              dotHeight: 5.38.h,
             ),
           ),
         ),

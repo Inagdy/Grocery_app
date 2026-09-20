@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/card_model.dart';
 import 'package:grocery_app/screens/cart_screen.dart';
 import 'package:grocery_app/widget/adding_remove_counter.dart';
@@ -15,8 +17,8 @@ class CardProduct extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 25.27),
           child: Row(
             children: [
-              Image.asset(cardModel.imagePath, width: 70.43, height: 64.69),
-              SizedBox(width: 27.84),
+              Image.asset(cardModel.imagePath, width: 70.43.w, height: 64.69.h),
+              27.84.horizontal,
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,12 +26,12 @@ class CardProduct extends StatelessWidget {
                     Text(
                       cardModel.productName,
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 16.sp,
                         fontWeight: FontWeight.w400,
                         color: Color(0xff181725),
                       ),
                     ),
-                    SizedBox(height: 5),
+                    5.vertical,
                     Text(
                       cardModel.productDescription,
                       style: TextStyle(
@@ -37,7 +39,7 @@ class CardProduct extends StatelessWidget {
                         color: Color(0xff7C7C7C),
                       ),
                     ),
-                    SizedBox(height: 12),
+                    12.vertical,
                     AddingRemoveCounter(count: 1),
                   ],
                 ),
@@ -45,11 +47,11 @@ class CardProduct extends StatelessWidget {
               Column(
                 children: [
                   Icon(Icons.close, color: Color(0xffB3B3B3)),
-                  SizedBox(height: 29.415),
+                  29.415.vertical,
                   Text(
                     cardModel.price,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.w600,
                       color: Color(0xff181725),
                     ),

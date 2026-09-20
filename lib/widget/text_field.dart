@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextField extends StatelessWidget {
   final String? label;
@@ -60,7 +61,7 @@ class CustomTextField extends StatelessWidget {
                 )
               : null,
           prefixIconConstraints: searchFeild == true
-              ? const BoxConstraints(maxWidth: 43, minHeight: 40)
+              ? BoxConstraints(maxWidth: 43.w, minHeight: 40.h)
               : null,
         ),
         onTapOutside: (value) {

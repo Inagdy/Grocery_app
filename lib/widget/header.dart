@@ -1,6 +1,8 @@
-
+﻿
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 
 class Header extends StatelessWidget {
   final String headerMainText;
@@ -17,29 +19,29 @@ class Header extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 28.42),
+        28.42.vertical,
         Center(
           child: Image.asset(
             "assests/images/carrot.png",
-            width: 47.84,
-            height: 55.64,
+            width: 47.84.w,
+            height: 55.64.h,
           ),
         ),
-        const SizedBox(height: 100.21),
+        100.21.vertical,
         Text(
           headerMainText,
-          style: const TextStyle(
+          style: TextStyle(
             fontWeight: FontWeight.w600,
-            fontSize: 26,
+            fontSize: 26.sp,
             letterSpacing: 0,
             color: Color(0xff181725),
           ),
         ),
-        const SizedBox(height: 15),
+        15.vertical,
         Text(
           secandMainText,
-          style: const TextStyle(
-            fontSize: 16,
+          style: TextStyle(
+            fontSize: 16.sp,
             fontWeight: FontWeight.w400,
             color: Color(0xff7C7C7C),
             letterSpacing: 0,

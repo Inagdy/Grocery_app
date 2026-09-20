@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContactDetails extends StatelessWidget {
   final IconData icon;
@@ -22,7 +23,7 @@ class ContactDetails extends StatelessWidget {
                   dataText,
                   style: TextStyle(
                     fontWeight: FontWeight(600),
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Color(0xff181725),
                   ),
                 ),

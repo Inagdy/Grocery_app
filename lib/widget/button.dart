@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   final String text ;
@@ -8,6 +9,8 @@ class CustomButton extends StatelessWidget {
 
   final String background;
   final VoidCallback? onPressed;
+
+
 
 
   const CustomButton({
@@ -22,6 +25,7 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  final bool isWide = MediaQuery.sizeOf(context).width >= 700;
     return Material(
       color: Colors.transparent,
       borderRadius: BorderRadius.circular(19),
@@ -30,7 +34,7 @@ class CustomButton extends StatelessWidget {
         onTap: onPressed,
         borderRadius: BorderRadius.circular(19),
         child: Container(
-          width: double.infinity,
+          width:  double.infinity,
           padding: const EdgeInsets.symmetric(vertical: 25.4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(19),
@@ -57,7 +61,7 @@ class CustomButton extends StatelessWidget {
                     color: hasIcon
                         ? const Color(0xFF43B879)
                         : const Color(0xffFFF9FF),
-                    fontSize: 18,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.w600,
 
                   ),
@@ -68,18 +72,18 @@ class CustomButton extends StatelessWidget {
                 Positioned(
                   right: 22.5,
                   child: Container(
-                    width: 43,
-                    height: 22,
+                    width: 43.w,
+                    height: 22.h,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: const Color(0xFF489E67),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    child: const Text(
+                    child: Text(
                       "\$12.96",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 12,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w600,
                         color: Color(0xffFCFCFC),
                       ),

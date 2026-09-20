@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/favorite_model.dart';
 import 'package:grocery_app/screens/favorite_screen.dart';
 
@@ -20,8 +22,8 @@ class FavoriteItem extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Image.asset(favoriteItem.imagePath, width: 30.91, height: 54.9),
-              SizedBox(width: 42.04),
+              Image.asset(favoriteItem.imagePath, width: 30.91.w, height: 54.9.h),
+              42.04.horizontal,
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +31,7 @@ class FavoriteItem extends StatelessWidget {
                     Text(
                       favoriteItem.title,
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 16.sp,
                         fontWeight: FontWeight.w400,
                         color: Color(0xFF181725),
                       ),

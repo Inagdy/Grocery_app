@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/explore_model.dart';
 import 'package:grocery_app/screens/beverages_screen.dart';
 import 'package:grocery_app/widget/text_field.dart';
@@ -15,18 +17,18 @@ class ExploreScreen extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            SizedBox(height: 8.1),
+            8.1.vertical,
             Text(
               'Find Products',
               style: TextStyle(
                 color: Color(0xff181725),
-                fontSize: 20,
+                fontSize: 20.sp,
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(height: 30),
+            30.vertical,
             CustomTextField(searchFeild: true),
-            SizedBox(height: 20),
+            20.vertical,
             Expanded(
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

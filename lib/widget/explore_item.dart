@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grocery_app/models/explore_model.dart';
 
 class ExploreItem extends StatelessWidget {
@@ -28,19 +29,19 @@ Widget build(BuildContext context) {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 31.1),
-              child: Image.asset(exploreModel.imagePath ,width: 111.38, height: 74.9,),
+              child: Image.asset(exploreModel.imagePath ,width: 111.38.w, height: 74.9.h,),
             ),
             Text(
               exploreModel.textdata,
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 16.sp,
                 fontWeight: FontWeight(400)
               ),
             ),
           ],
         ),
- 
+     
       ),
     ),
   );

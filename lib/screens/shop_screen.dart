@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/groceries_model.dart';
 import 'package:grocery_app/models/product_model.dart';
 import 'package:grocery_app/widget/homebottom.dart';
@@ -18,15 +20,15 @@ class ShopScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 14.28),
+              14.28.vertical,
               Center(
                 child: Image.asset(
                   "assests/images/carrot.png",
-                  width: 20.88,
-                  height: 23.78,
+                  width: 20.88.w,
+                  height: 23.78.h,
                 ),
               ),
-              SizedBox(height: 7.6),
+              7.6.vertical,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
       
@@ -35,76 +37,76 @@ class ShopScreen extends StatelessWidget {
                   Text(
                     'Dhaka, Banassre',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight(600),
                       color: Color(0xff4C4F4D),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+20.vertical,
               CustomTextField(searchFeild: true),
-              SizedBox(height: 20),
+              20.vertical,
               HomeSlider(),
-              SizedBox(height: 30),
+              30.vertical,
               HomeSectionTitle(leftWord: 'Exclusive Offer'),
-              SizedBox(height: 20),
-      
+              20.vertical,
+
               SizedBox(
-                height: 248.51,
+                height: 248.51.h,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
                   separatorBuilder: (context, index) =>
-                      const SizedBox(width: 15.07),
+                      15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },
                 ),
               ),
-              SizedBox(height: 30),
+              30.vertical,
               HomeSectionTitle(leftWord: "Best Selling"),
-              SizedBox(height: 20.28),
+              20.28.vertical,
               SizedBox(
-                height: 248.51,
+                height: 248.51.h,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
                   separatorBuilder: (context, index) =>
-                      const SizedBox(width: 15.07),
+                      15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },
                 ),
               ),
-              SizedBox(height: 30),
+              30.vertical,
               HomeSectionTitle(leftWord: "Groceries"),
-              SizedBox(height: 20),
-      
+              20.vertical,
+
               Padding(
                 padding: const EdgeInsets.only(left: 24.71),
                 child: SizedBox(
-                  height: 105,
+                  height: 105.h,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemCount: groceries.length,
                     separatorBuilder: (context, index) =>
-                        const SizedBox(width: 14.95),
+                        14.95.horizontal,
                     itemBuilder: (context, index) {
                       return SecandHomeSlider(groceriesModel: groceries[index]);
                     },
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-      
+              20.vertical,
+
               SizedBox(
-                height: 248.51,
+                height: 248.51.h,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
                   separatorBuilder: (context, index) =>
-                      const SizedBox(width: 15.07),
+                      15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },

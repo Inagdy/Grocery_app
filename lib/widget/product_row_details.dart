@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 
 class ProductRowDetails extends StatefulWidget {
   final String textdata;
@@ -30,9 +32,9 @@ class _ProductRowDetailsState extends State<ProductRowDetails> {
               Expanded(
                 child: Text(
                   widget.textdata,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Color(0xff181725),
                   ),
                 ),
@@ -50,8 +52,8 @@ class _ProductRowDetailsState extends State<ProductRowDetails> {
               ),
               ]else if(widget.textdata =="Nutritions" )...[
                 Container(
-                  width: 33.61,
-                  height: 18,
+                  width: 33.61.w,
+                  height: 18.h,
                   decoration: BoxDecoration(
                   color: Color(0xffEBEBEB),
                     borderRadius: BorderRadius.circular(5),
@@ -60,9 +62,9 @@ class _ProductRowDetailsState extends State<ProductRowDetails> {
 
                   child: Text(
                     "100gr",
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      fontSize: 9,
+                      fontSize: 9.sp,
                       color: Color(0xff7C7C7C),
                     ),
                   ),
@@ -85,16 +87,16 @@ class _ProductRowDetailsState extends State<ProductRowDetails> {
             ],
           ),
           if (showDescription && (widget.description?.isNotEmpty ?? false)) ...[
-            const SizedBox(height: 10),
+10.vertical,
             Text(
               widget.description ?? '',
-              style: const TextStyle(
-                fontSize: 15,
+              style: TextStyle(
+                fontSize: 15.sp,
                 height: 1.6,
                 color: Color(0xff7C7C7C),
               ),
             ),
-            const SizedBox(height: 24),
+            24.vertical,
           ],
         ],
       ),

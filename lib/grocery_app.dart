@@ -1,10 +1,8 @@
 
-
 import 'package:flutter/material.dart';
-import 'package:grocery_app/screens/cart_screen.dart';
-import 'package:grocery_app/screens/filter.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grocery_app/screens/onbording.dart';
-import 'package:grocery_app/screens/orderaccept.dart';
+
 
 
 
@@ -14,9 +12,14 @@ class GroceryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home:const OnbordingScreen(),
+      return ScreenUtilInit(
+        designSize: const Size(414, 896),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home:const OnbordingScreen(),
+        ),
       );
    }
 }

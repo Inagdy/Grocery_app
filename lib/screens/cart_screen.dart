@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/card_model.dart';
 import 'package:grocery_app/screens/orderaccept.dart';
 import 'package:grocery_app/widget/bottom_sheet.dart';
@@ -14,12 +16,12 @@ class CartScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 6.99),
+            6.99.vertical,
             Center(
               child: Text(
                 'My Cart',
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 20.sp,
                   fontWeight: FontWeight.w400,
                   color: Color(0xff181725),
                 ),
@@ -44,7 +46,7 @@ class CartScreen extends StatelessWidget {
                     isScrollControlled: true,
                     builder: (BuildContext context) {
                       return SizedBox(
-                        height: 791,
+                        height: 791.h,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -60,7 +62,7 @@ class CartScreen extends StatelessWidget {
                                     child: Text(
                                       "Checkout",
                                       style: TextStyle(
-                                        fontSize: 24,
+                                        fontSize: 24.sp,
                                         fontWeight: FontWeight.w600,
                                         color: Color(0xff181725),
                                       ),
@@ -70,24 +72,24 @@ class CartScreen extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(height: 30),
+                            30.vertical,
                             Divider(),
 
-                            customBottomSheet(
+                            CustomBottomSheet(
                               lefttext: 'Delivery',
                               rigthtext: 'Select Method',
                             ),
-                            customBottomSheet(
+                            CustomBottomSheet(
                               lefttext: 'Pament',
                               rigthtext: 'Select Method',
                               hasicon: true,
                               iconData: Icons.credit_card,
                             ),
-                            customBottomSheet(
+                            CustomBottomSheet(
                               lefttext: 'Promo Code',
                               rigthtext: 'Pick discount',
                             ),
-                            customBottomSheet(
+                            CustomBottomSheet(
                               lefttext: 'Total Cost',
                               rigthtext: '\$13.97',
                             ),

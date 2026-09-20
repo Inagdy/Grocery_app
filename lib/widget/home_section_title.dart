@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 class HomeSectionTitle extends StatelessWidget {
   final String leftWord;
 
@@ -13,7 +14,7 @@ class HomeSectionTitle extends StatelessWidget {
                 leftWord,
                 style: TextStyle(
                   fontWeight: FontWeight(600),
-                  fontSize: 24,
+                  fontSize: 24.sp,
                   color: Color(0xff181725),
                 ),
               ),
@@ -21,7 +22,7 @@ class HomeSectionTitle extends StatelessWidget {
                 "See all",
                 style: TextStyle(
                   fontWeight: FontWeight(600),
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   color: Color(0xff53B175),
                 ),
               ),

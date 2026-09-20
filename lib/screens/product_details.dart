@@ -1,5 +1,7 @@
-import 'package:carousel_slider/carousel_slider.dart';
+﻿import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/widget/adding_remove_counter.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/product_row_details.dart';
@@ -32,13 +34,13 @@ class _ProductDetailsState extends State<ProductDetails> {
           children: [
             SizedBox(
               // width: 413.6,
-              height: 371.44,
+              height: 371.44.h,
               child: Stack(
                 children: [
                   SizedBox(width: double.infinity, height: double.infinity),
                   CarouselSlider(
                     options: CarouselOptions(
-                      height: 371.44,
+                      height: 371.44.h,
                       autoPlay: true,
                       viewportFraction: 1,
                       enableInfiniteScroll: true,
@@ -79,8 +81,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                         effect: ExpandingDotsEffect(
                           dotColor: Colors.grey,
                           activeDotColor: const Color(0xff53B175),
-                          dotWidth: 5.03,
-                          dotHeight: 5.38,
+                          dotWidth: 5.03.w,
+                          dotHeight: 5.38.h,
                         ),
                       ),
                     ),
@@ -93,14 +95,14 @@ class _ProductDetailsState extends State<ProductDetails> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 30.5),
+                  30.5.vertical,
                   Row(
                     children: [
-                      const Expanded(
+                      Expanded(
                         child: Text(
                           'Naturel Red Apple',
                           style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 24.sp,
                             fontWeight: FontWeight.w400,
                             color: Color(0xff181725),
                           ),
@@ -121,31 +123,31 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 10.5),
-                  const Text(
+                  10.5.vertical,
+                  Text(
                     '1kg, Price',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      fontSize: 16,
+                      fontSize: 16.sp,
                       color: Color(0xff7C7C7C),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  20.vertical,
                   Row(
                     children: [
                       Expanded(child: AddingRemoveCounter(borderRadios :true)),
-                      const SizedBox(width: 16),
-                      const Text(
+                      16.horizontal,
+                      Text(
                         '\$4.99',
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
-                          fontSize: 24,
+                          fontSize: 24.sp,
                           color: Color(0xff181725),
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 30.7),
+                  30.7.vertical,
                   const Divider(),
                   ProductRowDetails(
                     textdata: "Product Detail",

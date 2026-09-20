@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AddingRemoveCounter extends StatefulWidget {
   final int count;
@@ -25,8 +26,8 @@ class _AddingRemoveCounterState extends State<AddingRemoveCounter> {
       children: [
         Container(
           alignment: Alignment.center,
-          width: 45.67,
-          height: 45.67,
+          width: 45.67.w,
+          height: 45.67.h,
           decoration: BoxDecoration(
             border: widget.borderRadios?
             null
@@ -48,8 +49,8 @@ class _AddingRemoveCounterState extends State<AddingRemoveCounter> {
         ),
         Container(
           alignment: Alignment.center,
-          width: 45.67,
-          height: 45.67,
+          width: 45.67.w,
+          height: 45.67.h,
           decoration: BoxDecoration(
             border: widget.borderRadios
                 ? Border.all(color: Color(0xffB3B3B3))
@@ -62,15 +63,15 @@ class _AddingRemoveCounterState extends State<AddingRemoveCounter> {
             count.toString(),
             style: TextStyle(
               fontWeight: FontWeight.w600,
-              fontSize: 16,
+              fontSize: 16.sp,
               color: Color(0xff181725),
             ),
           ),
         ),
         Container(
           alignment: Alignment.center,
-          width: 45.67,
-          height: 45.67,
+          width: 45.67.w,
+          height: 45.67.h,
           decoration: BoxDecoration(
             border: widget.borderRadios
                 ? null

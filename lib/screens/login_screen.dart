@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/header.dart';
 import 'package:grocery_app/widget/text_field.dart';
@@ -20,11 +22,11 @@ class LoginScreen extends StatelessWidget {
                 headerMainText: "Login",
                 secandMainText: "Enter your emails and password",
               ),
-              SizedBox(height: 40),
+              40.vertical,
               CustomTextField(label: "Email"),
-              SizedBox(height: 30),
+              30.vertical,
               CustomTextField(label: 'Password', suffixIcon: Icons.visibility),
-              SizedBox(height: 20),
+              20.vertical,
               Align(
                 alignment: Alignment.centerRight,
                 child: Text(
@@ -32,22 +34,22 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     color: Color(0xff181725),
                     fontWeight: FontWeight(400),
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     letterSpacing: 0.5,
                   ),
                 ),
               ),
-              SizedBox(height: 30),
+              30.vertical,
               CustomButton(
                 text: "Login",
                 background: mainBackgroundColor.toString(), hasIcon: false,
               ),
-              SizedBox(height: 25),
+              25.vertical,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Don’t have an account?",
+                    "Don't have an account?",
                     style: TextStyle(
                       fontWeight: FontWeight(600),
                       color: Color(0xff181725),

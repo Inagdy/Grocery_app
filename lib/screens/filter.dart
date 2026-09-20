@@ -1,5 +1,7 @@
-
+﻿
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/custom_check_box.dart';
 
@@ -29,30 +31,30 @@ class _FilterScreenState extends State<FilterScreen> {
         body: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 5),
+              5.vertical,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.01),
                 child: Row(
-                  children: const [
-                    Icon(Icons.close),
+                  children: [
+                    const Icon(Icons.close),
       
                     Expanded(
                       child: Center(
                         child: Text(
                           "Filters",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 20.sp,
                             fontWeight: FontWeight.w400,
                             color: Color(0xff181725),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 24),
+                    24.horizontal,
                   ],
                 ),
               ),
-              const SizedBox(height: 31.18),
+              31.18.vertical,
               Expanded(
                 child: Container(
                   width: double.infinity,
@@ -67,16 +69,16 @@ class _FilterScreenState extends State<FilterScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 30),
-                      const Text(
+                      30.vertical,
+                      Text(
                         "Categories",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 24.sp,
                           fontWeight: FontWeight.w600,
                           color: Color(0xff181725),
                         ),
                       ),
-                      const SizedBox(height: 25),
+                      25.vertical,
                       Column(
                         children: [
                           CustomCheckbox(ischecked: eggs, title: "Eggs"),
@@ -91,11 +93,11 @@ class _FilterScreenState extends State<FilterScreen> {
                           CustomCheckbox(ischecked: fastFood, title: "Fast Food"),
                         ],
                       ),
-                      SizedBox(height: 40),
-                      const Text(
+                      40.vertical,
+                      Text(
                         "Brand",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 24.sp,
                           fontWeight: FontWeight.w600,
                           color: Color(0xff181725),
                         ),

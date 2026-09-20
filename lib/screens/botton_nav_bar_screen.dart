@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grocery_app/screens/account_screen.dart';
 import 'package:grocery_app/screens/cart_screen.dart';
 import 'package:grocery_app/screens/explore_screen.dart';
@@ -40,7 +41,7 @@ class _BottonNavBarScreenState extends State<BottonNavBarScreen> {
         selectedItemColor: Color(0xff53B175),
         unselectedItemColor: Color(0xff181725),
         selectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: 12.sp,
           fontWeight: FontWeight(600),
         ),
         type:BottomNavigationBarType.fixed,

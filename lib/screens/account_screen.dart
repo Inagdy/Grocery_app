@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/contact_details.dart';
@@ -13,15 +15,15 @@ class AccountScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20.99),
+            20.99.vertical,
             Padding(
               padding: const EdgeInsets.only(left: 25),
               child: Row(
                 children: [
                   Image.asset(
                     "assests/images/accountImage.png",
-                    width: 63.44,
-                    height: 64.32,
+                    width: 63.44.w,
+                    height: 64.32.h,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 20.16),
@@ -34,14 +36,14 @@ class AccountScreen extends StatelessWidget {
                               "Afsar Hossen",
                               style: TextStyle(
                                 fontWeight: FontWeight(400),
-                                fontSize: 20,
+                                fontSize: 20.sp,
                                 color: Color(0xff181725),
                               ),
                             ),
-                            SizedBox(width: 10.15),
+                            10.15.horizontal,
                             SvgPicture.asset(
                               'assests/icons/edit.svg',
-                              width: 15,
+                              width: 15.w,
                               color: Color(0xff53B175),
                             ),
                           ],
@@ -50,7 +52,7 @@ class AccountScreen extends StatelessWidget {
                           "Imshuvo97@gmail.com",
                           style: TextStyle(
                             fontWeight: FontWeight(400),
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             color: Color(0xff7C7C7C),
                           ),
                         ),
@@ -60,7 +62,7 @@ class AccountScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 30),
+            30.vertical,
             Divider(),
             ContactDetails(
               icon: Icons.breakfast_dining_outlined,
@@ -85,7 +87,7 @@ class AccountScreen extends StatelessWidget {
             ),
             ContactDetails(icon: Icons.help_outline, dataText: 'Notifecations '),
             ContactDetails(icon: Icons.info_outline, dataText: 'Help '),
-            SizedBox(height: 52.23),
+            52.23.vertical,
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.58),
               child: CustomButton(
@@ -95,7 +97,7 @@ class AccountScreen extends StatelessWidget {
                 iData: Icons.logout,
               ),
             ),
-            SizedBox(height: 24.45),
+            24.45.vertical,
           ],
         ),
       ),

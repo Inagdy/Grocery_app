@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomCheckbox extends StatefulWidget {
   final bool ischecked;
@@ -37,7 +38,7 @@ Widget build(BuildContext context) {
     title: Text(
       widget.title,
       style: TextStyle(
-        fontSize: 16,
+        fontSize: 16.sp,
         fontWeight: FontWeight.w400,
         color: !_isChecked
             ? const Color(0xff181725)

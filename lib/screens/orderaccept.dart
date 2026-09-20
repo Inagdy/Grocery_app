@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
-import 'package:grocery_app/screens/shop_screen.dart';
 import 'package:grocery_app/widget/button.dart';
 
 class OrderAccept extends StatelessWidget {
@@ -21,27 +22,27 @@ class OrderAccept extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SizedBox(height: 151.7),
+                151.7.vertical,
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 58.38),
                   child: Image.asset(
                     "assests/images/ordermainsign.png",
-                    width: 269.08,
-                    height: 240.31,
+                    width: 269.08.w,
+                    height: 240.31.h,
                   ),
                 ),
-                const SizedBox(height: 66.67),
-                const Text(
+                66.67.vertical,
+                Text(
                   "Your Order has been \naccepted",
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
+                  style: TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w600),
                 ),
-                const SizedBox(height: 20),
-                const Text(
-                  "Your items has been placcd and is on \nit’s way to being processed",
+                20.vertical,
+                Text(
+                  "Your items has been placcd and is on \nit's way to being processed",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.w400,
                     color: Color(0xff7C7C7C),
                   ),
@@ -55,7 +56,7 @@ class OrderAccept extends StatelessWidget {
                         text: "Track Order",
                         background: "0xff53B175",
                       ),
-                      const SizedBox(height: 12),
+                      12.vertical,
 
                       InkWell(
                         onTap: () {
@@ -66,11 +67,11 @@ class OrderAccept extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Text(
+                        child: Text(
                           "Back to Home",
                           style: TextStyle(
                             color: Color(0xff181725),
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight(600)
                           ),
                         ),
@@ -78,7 +79,7 @@ class OrderAccept extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 38.5),
+                38.5.vertical,
               ],
             ),
           ),

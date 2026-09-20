@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/product_model.dart';
 
 class HomeBottom extends StatelessWidget {
@@ -10,8 +12,8 @@ class HomeBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 173.32,
-      height: 248.51,
+      width: 173.32.w,
+      height: 248.51.h,
       padding: EdgeInsets.only(top: 25.21, left: 15, right: 14),
       // margin: EdgeInsets.only(right: 15.07),
       decoration: BoxDecoration(
@@ -34,7 +36,7 @@ class HomeBottom extends StatelessWidget {
             productModel.title,
             style: TextStyle(
               fontWeight: FontWeight(400),
-              fontSize: 16,
+              fontSize: 16.sp,
               color: Color(0xff181725),
             ),
           ),
@@ -43,11 +45,11 @@ class HomeBottom extends StatelessWidget {
             productModel.descripion,
             style: TextStyle(
               fontWeight: FontWeight(400),
-              fontSize: 14,
+              fontSize: 14.sp,
               color: Color(0xff7C7C7C),
             ),
           ),
-          SizedBox(height: 20),
+          20.vertical,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
     
@@ -56,14 +58,14 @@ class HomeBottom extends StatelessWidget {
                 child: Text('\$${productModel.price.toString()}',
                   style: TextStyle(
                     fontWeight: FontWeight(600),
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Color(0xff181725),
                   ),
                 ),
               ),
               Container(
-                width: 45.67,
-                height: 45.67,
+                width: 45.67.w,
+                height: 45.67.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(17),
                   color: Color(0xff53B175),

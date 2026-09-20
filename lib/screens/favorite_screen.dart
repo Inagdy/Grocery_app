@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/favorite_model.dart' show FavoriteModel;
 import 'package:grocery_app/widget/button.dart';
 import 'package:grocery_app/widget/favorite_item.dart';
@@ -11,16 +13,16 @@ class FavoriteScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 6.99),
+          6.99.vertical,
           Text(
             "Favorite",
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 20.sp,
               fontWeight: FontWeight.w400,
               color: Color(0xFF181725),
             ),
           ),
-          SizedBox(height: 32.17),
+          32.17.vertical,
           Divider(color: Color(0xFFE2E2E2), thickness: 1),
           FavoriteItem(favoriteItem: favoriteproduct[0]),
           FavoriteItem(favoriteItem: favoriteproduct[1]),
@@ -28,7 +30,7 @@ class FavoriteScreen extends StatelessWidget {
           FavoriteItem(favoriteItem: favoriteproduct[3]),
           FavoriteItem(favoriteItem: favoriteproduct[4]),
           Divider(color: Color(0xFFE2E2E2), thickness: 1),
-          SizedBox(height: 51.92),
+          51.92.vertical,
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.89),
             child: CustomButton(text: "Add All To Cart", background: "0xFF53B175"),

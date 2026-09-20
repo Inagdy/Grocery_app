@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/models/product_model.dart';
 import 'package:grocery_app/widget/homebottom.dart';
 
@@ -14,15 +16,15 @@ Widget build(BuildContext context) {
         child: Column(
           children: [
             SizedBox(
-              height: 48,
+              height: 48.h,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  const Center(
+                  Center(
                     child: Text(
                       'Beverages',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -48,7 +50,7 @@ Widget build(BuildContext context) {
                 ],
               ),
             ),
-            const SizedBox(height: 29.81),
+            29.81.vertical,
 
 
             Expanded(
