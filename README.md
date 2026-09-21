@@ -1,4 +1,4 @@
-# 🥕 Grocery Shopping App
+<img width="2340" height="1080" alt="Screenshot_1789997551" src="https://github.com/user-attachments/assets/646075d4-334f-4701-989d-7ecdbb9d4b26" /># 🥕 Grocery Shopping App
 
 A clean and modern grocery shopping mobile application built with **Flutter**.  
 This app allows users to browse grocery products, view product details, manage account information, and use authentication screens such as login and signup.
@@ -60,6 +60,15 @@ This app allows users to browse grocery products, view product details, manage a
 ### Order accepts screen 
 
 <img width="1170" height="2532" alt="order accepted" src="https://github.com/user-attachments/assets/7e8ff48b-cc6a-4662-8f27-35f4a6bfd3d2" />
+
+
+responsive design 
+
+<img width="2340" height="1080" alt="Screenshot_1789997551" src="https://github.com/user-attachments/assets/0ee175f8-a4c1-4078-90be-25db2956e90c" />
+<img width="2340" height="1080" alt="Screenshot_1789995697" src="https://github.com/user-attachments/assets/19e95488-b9e7-432f-93a9-7dfda6771635" />
+<img width="2340" height="1080" alt="Screenshot_1789995690" src="https://github.com/user-attachments/assets/15648551-2f69-4534-8ef7-0d14ca3d105c" />
+<img width="2340" height="1080" alt="Screenshot_1789995687" src="https://github.com/user-attachments/assets/4a366984-70bf-41c1-b9bb-aa3df51be85c" />
+<img width="2340" height="1080" alt="Screenshot_1789995681" src="https://github.com/user-attachments/assets/08596f0e-1709-46cb-b212-0adcc7e60771" />
 
 ---
 
