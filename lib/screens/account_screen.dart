@@ -1,5 +1,6 @@
 ﻿import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grocery_app/screens/login_screen.dart';
 import 'package:grocery_app/widget/spacing.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/widget/button.dart';
@@ -91,6 +92,12 @@ class AccountScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.58),
               child: CustomButton(
+                onPressed: () {
+                                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => LoginScreen()),
+                  );
+                },
                 text: "Log out",
                 background: secandBackgroundColor.toString(),
                 hasIcon: true,

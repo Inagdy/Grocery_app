@@ -29,7 +29,7 @@ class OnbordingScreen extends StatelessWidget {
         
         child: Column(
           
-          crossAxisAlignment: isWide? CrossAxisAlignment.start :CrossAxisAlignment.center ,
+          crossAxisAlignment: CrossAxisAlignment.center ,
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             // Container(

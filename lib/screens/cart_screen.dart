@@ -45,112 +45,116 @@ class CartScreen extends StatelessWidget {
                     context: context,
                     isScrollControlled: true,
                     builder: (BuildContext context) {
-                      return SizedBox(
-                        height: 791.h,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                left: 25.01,
-                                top: 30,
-                                right: 25,
+                      return Padding(
+                        padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom,
+                        ),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  left: 25.01,
+                                  top: 30,
+                                  right: 25,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        "Checkout",
+                                        style: TextStyle(
+                                          fontSize: 24.sp,
+                                          fontWeight: FontWeight.w600,
+                                          color: Color(0xff181725),
+                                        ),
+                                      ),
+                                    ),
+                                    Icon(Icons.close),
+                                  ],
+                                ),
                               ),
-                              child: Row(
+                              30.vertical,
+                              Divider(),
+                        
+                              CustomBottomSheet(
+                                lefttext: 'Delivery',
+                                rigthtext: 'Select Method',
+                              ),
+                              CustomBottomSheet(
+                                lefttext: 'Pament',
+                                rigthtext: 'Select Method',
+                                hasicon: true,
+                                iconData: Icons.credit_card,
+                              ),
+                              CustomBottomSheet(
+                                lefttext: 'Promo Code',
+                                rigthtext: 'Pick discount',
+                              ),
+                              CustomBottomSheet(
+                                lefttext: 'Total Cost',
+                                rigthtext: '\$13.97',
+                              ),
+                        
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(
-                                    child: Text(
-                                      "Checkout",
-                                      style: TextStyle(
-                                        fontSize: 24.sp,
-                                        fontWeight: FontWeight.w600,
-                                        color: Color(0xff181725),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20 ,left: 25.01),
+                                    child: RichText(
+                                      textAlign: TextAlign.left,
+                                      text: TextSpan(
+                                        style: TextStyle(
+                                          fontWeight: FontWeight(600),
+                                          color: Color(0xff7C7C7C),
+                                        ),
+                                        children: [
+                                          TextSpan(
+                                            text:
+                                                "By placing an order you agree to our \n",
+                                          ),
+                                          TextSpan(
+                                            text: " Terms",
+                                            style: TextStyle(
+                                              color: Color(0xff181725),
+                                            ),
+                                          ),
+                                          TextSpan(text: " And"),
+                                          TextSpan(
+                                            text: " Conditions",
+                                            style: TextStyle(
+                                              color: Color(0xff181725),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
-                                  Icon(Icons.close),
                                 ],
                               ),
-                            ),
-                            30.vertical,
-                            Divider(),
-
-                            CustomBottomSheet(
-                              lefttext: 'Delivery',
-                              rigthtext: 'Select Method',
-                            ),
-                            CustomBottomSheet(
-                              lefttext: 'Pament',
-                              rigthtext: 'Select Method',
-                              hasicon: true,
-                              iconData: Icons.credit_card,
-                            ),
-                            CustomBottomSheet(
-                              lefttext: 'Promo Code',
-                              rigthtext: 'Pick discount',
-                            ),
-                            CustomBottomSheet(
-                              lefttext: 'Total Cost',
-                              rigthtext: '\$13.97',
-                            ),
-
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 20 ,left: 25.01),
-                                  child: RichText(
-                                    textAlign: TextAlign.left,
-                                    text: TextSpan(
-                                      style: TextStyle(
-                                        fontWeight: FontWeight(600),
-                                        color: Color(0xff7C7C7C),
-                                      ),
-                                      children: [
-                                        TextSpan(
-                                          text:
-                                              "By placing an order you agree to our \n",
-                                        ),
-                                        TextSpan(
-                                          text: " Terms",
-                                          style: TextStyle(
-                                            color: Color(0xff181725),
-                                          ),
-                                        ),
-                                        TextSpan(text: " And"),
-                                        TextSpan(
-                                          text: " Conditions",
-                                          style: TextStyle(
-                                            color: Color(0xff181725),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                        
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  top: 26.5,
+                                  left: 24.74,
+                                  right: 25.26,
                                 ),
-                              ],
-                            ),
-
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                top: 26.5,
-                                left: 24.74,
-                                right: 25.26,
+                                child: CustomButton(
+                                  text: "Place Order",
+                                  background: "0xff53B175",
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => OrderAccept(),
+                                      ),
+                                    );
+                                  },
+                                ),
                               ),
-                              child: CustomButton(
-                                text: "Place Order",
-                                background: "0xff53B175",
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => OrderAccept(),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       );
                     },

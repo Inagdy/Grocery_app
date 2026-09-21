@@ -14,7 +14,7 @@ class ContactDetails extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 26.51, top: 20, bottom: 20),
-              child: Icon(icon, weight: 18, size: 20),
+              child: Icon(icon, weight: 18.w, size: 20),
             ),
             Expanded(
               child: Padding(

@@ -11,70 +11,72 @@ class HomeBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 173.32.w,
-      height: 248.51.h,
-      padding: EdgeInsets.only(top: 25.21, left: 15, right: 14),
-      // margin: EdgeInsets.only(right: 15.07),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(18)),
-        border: Border.all(color: Color(0xffE2E2E2), width: 1),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Center(
-            child: Expanded(
+    return Expanded(
+      child: Container(
+        
+        width:MediaQuery.of(context).orientation==Orientation.landscape?250:173.32  ,
+        height:MediaQuery.of(context).orientation==Orientation.landscape?250: 248.51,
+        padding: EdgeInsets.only(top: 25.21, left: 15, right: 14),
+        // margin: EdgeInsets.only(right: 15.07),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(18)),
+          border: Border.all(color: Color(0xffE2E2E2), width: 1),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              
               child: Image.asset(
                 productModel.image,
                 width: productModel.imageW,
                 height:productModel.imageh,
               ),
             ),
-          ),
-          Text(
-            productModel.title,
-            style: TextStyle(
-              fontWeight: FontWeight(400),
-              fontSize: 16.sp,
-              color: Color(0xff181725),
+            Text(
+              productModel.title,
+              style: TextStyle(
+                fontWeight: FontWeight(400),
+                fontSize: 16.sp,
+                color: Color(0xff181725),
+              ),
             ),
-          ),
-          // SizedBox(height: 5),
-          Text(
-            productModel.descripion,
-            style: TextStyle(
-              fontWeight: FontWeight(400),
-              fontSize: 14.sp,
-              color: Color(0xff7C7C7C),
+            // SizedBox(height: 5),
+            Text(
+              productModel.descripion,
+              style: TextStyle(
+                fontWeight: FontWeight(400),
+                fontSize: 14.sp,
+                color: Color(0xff7C7C7C),
+              ),
             ),
-          ),
-          20.vertical,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    
-            children: [
-              Expanded(
-                child: Text('\$${productModel.price.toString()}',
-                  style: TextStyle(
-                    fontWeight: FontWeight(600),
-                    fontSize: 16.sp,
-                    color: Color(0xff181725),
+            20.horizontal,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      
+              children: [
+                Expanded(
+                  child: Text('\$${productModel.price.toString()}',
+                    style: TextStyle(
+                      fontWeight: FontWeight(600),
+                      fontSize: 16.sp,
+                      color: Color(0xff181725),
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                width: 45.67.w,
-                height: 45.67.h,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(17),
-                  color: Color(0xff53B175),
+                Container(
+                  width: 45.67,
+                  height: 45.67,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(17),
+                    color: Color(0xff53B175),
+                  ),
+                  child: Icon(Icons.add, color: Colors.white, size: 17),
                 ),
-                child: Icon(Icons.add, color: Colors.white, size: 17),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

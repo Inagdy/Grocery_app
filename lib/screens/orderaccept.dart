@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grocery_app/widget/spacing.dart';
 import 'package:grocery_app/screens/botton_nav_bar_screen.dart';
@@ -18,70 +18,77 @@ class OrderAccept extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                151.7.vertical,
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 58.38),
-                  child: Image.asset(
-                    "assests/images/ordermainsign.png",
-                    width: 269.08.w,
-                    height: 240.31.h,
-                  ),
-                ),
-                66.67.vertical,
-                Text(
-                  "Your Order has been \naccepted",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w600),
-                ),
-                20.vertical,
-                Text(
-                  "Your items has been placcd and is on \nit's way to being processed",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xff7C7C7C),
-                  ),
-                ),
-                const Spacer(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24.92),
+          Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      CustomButton(
-                        text: "Track Order",
-                        background: "0xff53B175",
-                      ),
-                      12.vertical,
-
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const BottonNavBarScreen(),
-                            ),
-                          );
-                        },
-                        child: Text(
-                          "Back to Home",
-                          style: TextStyle(
-                            color: Color(0xff181725),
-                            fontSize: 18.sp,
-                            fontWeight: FontWeight(600)
-                          ),
+                      151.7.vertical,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 58.38),
+                        child: Image.asset(
+                          "assests/images/ordermainsign.png",
+                          width: 269.08.w,
+                          height: 240.31.h,
                         ),
                       ),
+                      66.67.vertical,
+                      Text(
+                        "Your Order has been \naccepted",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 28.sp,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      20.vertical,
+                      Text(
+                        "Your items has been placcd and is on \nit's way to being processed",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w400,
+                          color: Color(0xff7C7C7C),
+                        ),
+                      ),
+                      38.5.vertical,
                     ],
                   ),
                 ),
-                38.5.vertical,
-              ],
-            ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24.92),
+                child: Column(
+                  children: [
+                    CustomButton(
+                      text: "Track Order",
+                      background: "0xff53B175",
+                    ),
+                    12.vertical,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const BottonNavBarScreen(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        "Back to Home",
+                        style: TextStyle(
+                          color: Color(0xff181725),
+                          fontSize: 18.sp,
+                          fontWeight: FontWeight(600),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              38.5.vertical,
+            ],
           ),
         ],
       ),

@@ -31,7 +31,7 @@ class ShopScreen extends StatelessWidget {
               7.6.vertical,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-      
+
                 children: [
                   Icon(Icons.location_on, color: Color(0xff4C4F4D)),
                   Text(
@@ -44,7 +44,7 @@ class ShopScreen extends StatelessWidget {
                   ),
                 ],
               ),
-20.vertical,
+              20.vertical,
               CustomTextField(searchFeild: true),
               20.vertical,
               HomeSlider(),
@@ -53,12 +53,11 @@ class ShopScreen extends StatelessWidget {
               20.vertical,
 
               SizedBox(
-                height: 248.51.h,
+                height: 248.51.w,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
-                  separatorBuilder: (context, index) =>
-                      15.07.horizontal,
+                  separatorBuilder: (context, index) => 15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },
@@ -68,12 +67,11 @@ class ShopScreen extends StatelessWidget {
               HomeSectionTitle(leftWord: "Best Selling"),
               20.28.vertical,
               SizedBox(
-                height: 248.51.h,
+                height: 248.51.w,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
-                  separatorBuilder: (context, index) =>
-                      15.07.horizontal,
+                  separatorBuilder: (context, index) => 15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },
@@ -90,8 +88,7 @@ class ShopScreen extends StatelessWidget {
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemCount: groceries.length,
-                    separatorBuilder: (context, index) =>
-                        14.95.horizontal,
+                    separatorBuilder: (context, index) => 14.95.horizontal,
                     itemBuilder: (context, index) {
                       return SecandHomeSlider(groceriesModel: groceries[index]);
                     },
@@ -101,12 +98,11 @@ class ShopScreen extends StatelessWidget {
               20.vertical,
 
               SizedBox(
-                height: 248.51.h,
+                height: 248.51.w,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemCount: products.length,
-                  separatorBuilder: (context, index) =>
-                      15.07.horizontal,
+                  separatorBuilder: (context, index) => 15.07.horizontal,
                   itemBuilder: (context, index) {
                     return HomeBottom(productModel: products[index]);
                   },
@@ -126,12 +122,16 @@ List<ProductModel> products = [
     title: "Organic Bananas",
     descripion: "7pcs, Priceg",
     price: 4.99,
+    imageW: 110.w,
+    imageh: 62.h,
   ),
   ProductModel(
     image: "assests/images/apple.png",
     title: "Red Apple",
     descripion: "1kg, Priceg",
     price: 4.99,
+    imageW: 110.w,
+    imageh: 62.h,
   ),
   ProductModel(
     image: "assests/images/ginger.png",
@@ -144,6 +144,8 @@ List<ProductModel> products = [
     title: "Bell Pepper Red",
     descripion: "1kg, Priceg",
     price: 4.99,
+    imageW: 110.w,
+    imageh: 62.h,
   ),
 ];
 

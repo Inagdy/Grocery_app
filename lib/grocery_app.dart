@@ -1,11 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grocery_app/screens/onbording.dart';
-
-
-
-
 
 class GroceryApp extends StatelessWidget {
   const GroceryApp({super.key});
@@ -23,6 +18,3 @@ class GroceryApp extends StatelessWidget {
       );
    }
 }
-
-
-
